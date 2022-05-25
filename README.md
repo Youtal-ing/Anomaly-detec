@@ -37,11 +37,13 @@ In this project we will use **LSTM**
     -   Tensorflow
     -   keras
     -   PyOD
-# Project Steps : 
- 1.Loading Dataset 
- 2.Cleaning Dataset 
- 3.Analyzing Dataset
- 4.Applying PCA (The principal components)
- 5.Building (Decoder , Encoder)
- 6.Training 
- 7.Model Loss /  precision  /  recall / f1-score  / support
+  
+ **Project Steps :** 
+
+-  Loading Dataset
+-  Cleaning Dataset
+-  Analyzing Dataset
+-  Applying PCA (The principal components)
+-  Building (Decoder , Encoder)
+-  Training 
+-  Model Loss /  precision  /  recall / f1-score  / support
