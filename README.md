@@ -7,9 +7,11 @@
 The dataset is open source, From Kaggle (is an online community of data scientists and machine learning practitioners. Kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment).
 The data set represents 219,521 readings from 51 sensors  that are used to do condition monitoring of pumps.
 **Dataset details :** 
--Timestamp data
--Sensor data(52 series): All values are raw values
--Machine status: This is target label that I want to predict when the failure will happen
+
+-  Timestamp data
+-  Sensor data(52 series): All values are raw values
+-  Machine status: This is target label that I want to predict when the failure will happen
+
 
 **to download the data :** 
 // !kaggle datasets download -d nphantawee/pump-sensor-data
