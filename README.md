@@ -19,7 +19,7 @@ A common LSTM unit is composed of a cell, an input gate, an output gate and a fo
 
 This architecture is comprised of two models: one for reading the input sequence and encoding it into a fixed-length vector, and a second for decoding the fixed-length vector and outputting the predicted sequence. The use of the models in concert gives the architecture its name of Encoder-Decoder LSTM designed specifically for seq2seq problems.
 
-# Before we will aply PCA : 
+# Before we will apply PCA : 
 **Principal component analysis (PCA) is a technique that transforms high-dimensions data into lower-dimensions while retaining as much information as possible.
 
 # Dataset :
