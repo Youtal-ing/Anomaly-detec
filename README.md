@@ -10,10 +10,12 @@
 Long short-term memory  usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997) ,it's an artificial neural network used in the fields of artificial intelligence and deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. Such a recurrent neural network can process not only single data points (such as images), but also entire sequences of data.
 A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate.The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.LSTM networks are well-suited to classifying, processing and making predictions based on time series data
 ![](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
-**specifically we will use Sequence to Sequence Model (Encoder-Decoder Long Short-Term Memory Networks) :
-![](https://machinelearningmastery.com/wp-content/uploads/2017/07/Encoder-Decoder-LSTM-Model-Architecture.png)
+
+# specifically we will use Sequence to Sequence Model (Encoder-Decoder Long Short-Term Memory Networks) :
 
 **The Encoder-Decoder LSTM can be implemented directly in the Keras deep learning library.
+
+![](https://machinelearningmastery.com/wp-content/uploads/2017/07/Encoder-Decoder-LSTM-Model-Architecture.png)
 
 This architecture is comprised of two models: one for reading the input sequence and encoding it into a fixed-length vector, and a second for decoding the fixed-length vector and outputting the predicted sequence. The use of the models in concert gives the architecture its name of Encoder-Decoder LSTM designed specifically for seq2seq problems.
 
