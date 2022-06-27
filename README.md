@@ -10,13 +10,11 @@ PyOD is the most comprehensive and scalable Python library for detecting outlyin
 # What is VAR Model?
 Vector autoregression (VAR) is a statistical model used to capture the relationship between multiple quantities as they change over time. VAR is a type of stochastic process model. generalize the single-variable (univariate) autoregressive model by allowing for multivariate time series. VAR models are often used in economics and the natural sciences.
 
-# what is Vae Model :
+# What is VAE Model :
 
-# specifically we will use Sequence to Sequence Model (Encoder-Decoder Long Short-Term Memory Networks) :
 
-**The Encoder-Decoder LSTM can be implemented directly in the Keras deep learning library.
+**The Encoder-Decoder can be implemented using keras . reference : https://keras.io/examples/generative/vae/
 
-![](https://miro.medium.com/max/1400/1*bY_ShNK6lBCQ3D9LYIfwJg@2x.png)
 
 The general idea of autoencoders is pretty simple and consists in setting an encoder and a decoder as neural networks and to learn the best encoding-decoding scheme using an iterative optimisation process. So, at each iteration we feed the autoencoder architecture (the encoder followed by the decoder) with some data, we compare the encoded-decoded output with the initial data and backpropagate the error through the architecture to update the weights of the networks.
 
@@ -24,8 +22,7 @@ In VAE, the encoder also learns a function that takes a vector of size n as inpu
 
 
 # Before we will apply PCA : 
-**Principal component analysis (PCA) is a technique that transforms high-dimensions data into lower-dimensions while retaining as much information as possible.
-
+**Principal component analysis (PCA) is a technique that transforms high-dimensions data into lower-dimensions while retaining as much information as possible. with help of scikit-learn. reference : https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
 # Dataset :
 The dataset is open source, From Kaggle (is an online community of data scientists and machine learning practitioners. Kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment).
 The data set represents 219,521 readings from 51 sensors  that are used to do condition monitoring of pumps.**Our purpose is to detect these abnormal observations in advance** 
