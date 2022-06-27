@@ -8,7 +8,7 @@ PyOD is the most comprehensive and scalable Python library for detecting outlyin
 # For the time series use case we will use vector autoregressive (VAR) model // and  Vae Model (in both cases we will aplly PCA first)  
  
 # What is VAR Model?
-Vector autoregression (VAR) is a statistical model used to capture the relationship between multiple quantities as they change over time. VAR is a type of stochastic process model. generalize the single-variable (univariate) autoregressive model by allowing for multivariate time series. VAR models are often used in economics and the natural sciences.
+Vector autoregression (VAR) is a statistical model used to capture the relationship between multiple quantities as they change over time. VAR is a type of stochastic process model. generalize the single-variable (univariate) autoregressive model by allowing for multivariate time series. VAR models are often used in economics and the natural sciences. reference : https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73
 
 # What is VAE Model :
 
