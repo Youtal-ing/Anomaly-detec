@@ -1,23 +1,26 @@
 # Anomaly-detection
 
- Detecting anomalies has been a research topic for a long time. Due to the increasing amount of data collected in the modern world in broad domains such as risk management, compliance, security, financial surveillance, health and medical risk, and AI safety, the need for automated data analysis has become a necessity. One of the most critical tasks in data analysis is the detection of anomalous data points.in this project we will use **LSTM** 
+ Detecting anomalies has been a research topic for a long time. Due to the increasing amount of data collected in the modern world in broad domains such as risk management, compliance, security, financial surveillance, health and medical risk, and AI safety, the need for automated data analysis has become a necessity. One of the most critical tasks in data analysis is the detection of anomalous data points.
 
-# For the comparison we will use the PyOD Library for anomaly detection and we will generate random data
+# For the Benchmark we will use the PyOD Library for anomaly detection and we will generate random data
 
-
+# For the time series use case we will use vector autoregressive (VAR) model // and  Vae Model (in both cases we will aplly PCA first)  
  
-# What is LSTM ? : 
-Long short-term memory  usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997) ,it's an artificial neural network used in the fields of artificial intelligence and deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. Such a recurrent neural network can process not only single data points (such as images), but also entire sequences of data.
-A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate.The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.LSTM networks are well-suited to classifying, processing and making predictions based on time series data
-![](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
+# What is VAR Model?
+Vector autoregression (VAR) is a statistical model used to capture the relationship between multiple quantities as they change over time. VAR is a type of stochastic process model. generalize the single-variable (univariate) autoregressive model by allowing for multivariate time series. VAR models are often used in economics and the natural sciences.
+
+# what is Vae Model :
 
 # specifically we will use Sequence to Sequence Model (Encoder-Decoder Long Short-Term Memory Networks) :
 
 **The Encoder-Decoder LSTM can be implemented directly in the Keras deep learning library.
 
-![](https://machinelearningmastery.com/wp-content/uploads/2017/07/Encoder-Decoder-LSTM-Model-Architecture.png)
+![](https://miro.medium.com/max/1400/1*bY_ShNK6lBCQ3D9LYIfwJg@2x.png)
 
-This architecture is comprised of two models: one for reading the input sequence and encoding it into a fixed-length vector, and a second for decoding the fixed-length vector and outputting the predicted sequence. The use of the models in concert gives the architecture its name of Encoder-Decoder LSTM designed specifically for seq2seq problems.
+The general idea of autoencoders is pretty simple and consists in setting an encoder and a decoder as neural networks and to learn the best encoding-decoding scheme using an iterative optimisation process. So, at each iteration we feed the autoencoder architecture (the encoder followed by the decoder) with some data, we compare the encoded-decoded output with the initial data and backpropagate the error through the architecture to update the weights of the networks.
+
+In VAE, the encoder also learns a function that takes a vector of size n as input.However, instead of learning how to generate potential vectors that the decoder function can reproduce, as in traditional AEs, VAE generates two vectors (size m) that represent the parameters of the distribution (mean and variance). Learn to do. The latent vector is sampled and the decoder function can convert it back to the original input vector[
+
 
 # Before we will apply PCA : 
 **Principal component analysis (PCA) is a technique that transforms high-dimensions data into lower-dimensions while retaining as much information as possible.
