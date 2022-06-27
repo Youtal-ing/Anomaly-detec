@@ -3,6 +3,7 @@
  Detecting anomalies has been a research topic for a long time. Due to the increasing amount of data collected in the modern world in broad domains such as risk management, compliance, security, financial surveillance, health and medical risk, and AI safety, the need for automated data analysis has become a necessity. One of the most critical tasks in data analysis is the detection of anomalous data points.
 
 # For the Benchmark we will use the PyOD Library for anomaly detection and we will generate random data
+PyOD is the most comprehensive and scalable Python library for detecting outlying objects in multivariate data. This exciting yet challenging field is commonly referred as Outlier Detection or Anomaly Detection. reference : https://github.com/yzhao062/pyod
 
 # For the time series use case we will use vector autoregressive (VAR) model // and  Vae Model (in both cases we will aplly PCA first)  
  
